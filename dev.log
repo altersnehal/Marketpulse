@@ -1,0 +1,27 @@
+
+> my-project@0.1.0 dev
+> next dev -p 3001
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3001
+
+ ✓ Starting...
+ ✓ Ready in 1474ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.9s (1889 modules)
+ GET / 200 in 5249ms
+ GET / 200 in 183ms
+ ✓ Compiled in 942ms (1880 modules)
+ ✓ Compiled in 560ms (1880 modules)
+ ✓ Compiled in 458ms (1880 modules)
+ ✓ Compiled in 629ms (1880 modules)
+ ✓ Compiled in 433ms (1880 modules)
+ ✓ Compiled in 1226ms (1880 modules)
+ ✓ Compiled in 641ms (1880 modules)
+ ✓ Compiled in 580ms (1880 modules)
+ ✓ Compiled in 563ms (1880 modules)
+ ✓ Compiled in 424ms (1880 modules)
+ ✓ Compiled in 538ms (1880 modules)
+ ✓ Compiled in 206ms (952 modules)
+ ✓ Compiled in 361ms (952 modules)
+ ✓ Compiled in 190ms (952 modules)
