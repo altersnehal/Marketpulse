@@ -62,20 +62,26 @@ export function Topbar({
 
   return (
     <header className="sticky top-0 z-40 bg-card border-b border-border flex-shrink-0">
-      <div className="flex h-[58px] items-center gap-4 px-5 lg:px-6">
+      <div className="flex h-[62px] items-center gap-4 px-5 lg:px-6">
         {/* Brand */}
-        <div className="flex items-center flex-shrink-0 mr-4">
-          <img
-            src="/logo.png"
-            alt="MarketPulse"
-            className="h-8 w-auto object-contain hidden sm:block"
-          />
-          {/* Mobile fallback — just icon portion */}
-          <img
-            src="/logo.png"
-            alt="MarketPulse"
-            className="h-7 w-7 object-cover object-left sm:hidden rounded"
-          />
+        <div className="flex items-center flex-shrink-0 mr-3">
+          {/* Desktop: full logo in a white-backed pill so it reads on dark mode too */}
+          <div className="hidden sm:flex items-center bg-white rounded-xl px-3 py-1.5 shadow-sm border border-black/5">
+            <img
+              src="/logo.png"
+              alt="MarketPulse"
+              className="h-8 w-auto object-contain"
+              style={{ maxWidth: 160 }}
+            />
+          </div>
+          {/* Mobile: icon-only square crop */}
+          <div className="sm:hidden flex items-center bg-white rounded-lg p-1 border border-black/10">
+            <img
+              src="/logo.png"
+              alt="MarketPulse"
+              className="h-7 w-7 object-cover object-left"
+            />
+          </div>
         </div>
 
         {/* Search */}
