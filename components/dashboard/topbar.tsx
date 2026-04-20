@@ -64,13 +64,18 @@ export function Topbar({
     <header className="sticky top-0 z-40 bg-card border-b border-border flex-shrink-0">
       <div className="flex h-[58px] items-center gap-4 px-5 lg:px-6">
         {/* Brand */}
-        <div className="flex items-center gap-2.5 flex-shrink-0 mr-4">
-          <div className="h-7 w-7 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground text-[11px] font-bold tracking-tight">MP</span>
-          </div>
-          <span className="font-bold text-foreground text-[15px] tracking-tight hidden sm:block">
-            MarketPulse
-          </span>
+        <div className="flex items-center flex-shrink-0 mr-4">
+          <img
+            src="/logo.png"
+            alt="MarketPulse"
+            className="h-8 w-auto object-contain hidden sm:block"
+          />
+          {/* Mobile fallback — just icon portion */}
+          <img
+            src="/logo.png"
+            alt="MarketPulse"
+            className="h-7 w-7 object-cover object-left sm:hidden rounded"
+          />
         </div>
 
         {/* Search */}
