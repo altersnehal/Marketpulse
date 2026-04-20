@@ -65,23 +65,18 @@ export function Topbar({
       <div className="flex h-[62px] items-center gap-4 px-5 lg:px-6">
         {/* Brand */}
         <div className="flex items-center flex-shrink-0 mr-3">
-          {/* Desktop: full logo in a white-backed pill so it reads on dark mode too */}
-          <div className="hidden sm:flex items-center bg-white rounded-xl px-3 py-1.5 shadow-sm border border-black/5">
-            <img
-              src="/logo.png"
-              alt="MarketPulse"
-              className="h-8 w-auto object-contain"
-              style={{ maxWidth: 160 }}
-            />
-          </div>
-          {/* Mobile: icon-only square crop */}
-          <div className="sm:hidden flex items-center bg-white rounded-lg p-1 border border-black/10">
-            <img
-              src="/logo.png"
-              alt="MarketPulse"
-              className="h-7 w-7 object-cover object-left"
-            />
-          </div>
+          {/* Full logo — light mode: show directly, dark mode: white bg pill */}
+          <img
+            src="/logo.png"
+            alt="MarketPulse"
+            className="hidden sm:block h-10 w-auto dark:bg-white dark:rounded-xl dark:px-3 dark:py-1.5"
+          />
+          {/* Mobile: icon crop */}
+          <img
+            src="/logo.png"
+            alt="MarketPulse"
+            className="sm:hidden h-8 w-8 object-cover object-left dark:bg-white dark:rounded-lg dark:p-0.5"
+          />
         </div>
 
         {/* Search */}
